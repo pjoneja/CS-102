@@ -1,3 +1,11 @@
+//
+//  charcount.c
+//  charcount
+//
+//  Created by Pranav on 12/14/14.
+//  Copyright (c) 2014 Cooper Union. All rights reserved.
+//
+
 #include <stdio.h>
 #define ARMAX 512
 int main()
@@ -35,12 +43,14 @@ int main()
 				}
 			other++;
 			}
+        //printf("%c",'A'+1);
+        //printf("%d",upper[1]);
+            for(n=0;n<26;n++)
+                printf("%c = %d\n",('A'+n),upper[n]);
+            for(n=0;n<26;n++)
+                printf("%c = %d\n",'a'+n,lower[n]);
+            for(n=0;n<10;n++)
+                printf("%c = %d\n",'0'+n,digits[n]);
+            printf("Other chars = %d\n",other);
 		}
-	for(n=0;n<26;n++)
-		printf("%c = %d\n",('A'+n),upper[n]);
-	for(n=0;n<26;n++)
-		printf("%c = %d\n",'a'+n,lower[n]);
-	for(n=0;n<10;n++)
-		printf("%c = %d\n",'0'+n,digits[n]);
-	printf("Other chars = %d\n",other);
 	}
